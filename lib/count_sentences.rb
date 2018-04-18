@@ -24,5 +24,3 @@ class String
     self.split(/[!?\.]/).size
   end
 end
-
-binding.pry
