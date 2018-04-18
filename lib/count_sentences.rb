@@ -21,7 +21,7 @@ class String
     self[/!{2,}/] = "!" if /!{2,}/.match(self)
     self[/\?{2,}/] = "?" if /\?{2,}/.match(self)
     self[/\.{2,}/] = "." if /\.{2,}/.match(self)
-    self.split(/!?\./)
+    self.split(/[!?\.]/)
   end
 end
 
