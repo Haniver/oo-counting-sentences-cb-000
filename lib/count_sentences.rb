@@ -19,7 +19,7 @@ class String
 
   def count_sentences
     self.[/!{2,}/] = "!"
-    self.[/?{2,}/] = "?"
+    self.[/\?{2,}/] = "?"
     self.[/\.{2,}/] = "."
     self.split(/!?\./)
   end
