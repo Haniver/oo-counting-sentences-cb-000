@@ -18,9 +18,9 @@ class String
   end
 
   def count_sentences
-    self[/!{2,}/] = "!" if self.include?(/!{2,}/)
-    self[/\?{2,}/] = "?" if self.include?(/\?{2,}/)
-    self[/\.{2,}/] = "." if self.include?(/\.{2,}/)
+    self[/!{2,}/] = "!" if self.match?(/!{2,}/)
+    self[/\?{2,}/] = "?" if self.match?(/\?{2,}/)
+    self[/\.{2,}/] = "." if self.match?(/\.{2,}/)
     self.split(/!?\./)
   end
 end
